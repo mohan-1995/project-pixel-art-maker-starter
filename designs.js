@@ -29,3 +29,16 @@ $('#btn').click(function(){
 	makeGrid(h, w);
 	alert('You have selected ' + h + " rows and " + w + " columns");	
 });
+
+function makeGrid(m, n){
+	for (let i = 0; i < m; i++) {
+		$('table').append("<tr></tr>");
+		$('table tr').each(function(index){
+			$(this).attr('class', "row "+[index]);
+		});
+	}
+
+    for (let j = 0; j < n; j++) {
+      	$("tr").append("<td></td>");
+    }
+}
