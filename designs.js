@@ -41,4 +41,9 @@ function makeGrid(m, n){
     for (let j = 0; j < n; j++) {
       	$("tr").append("<td></td>");
     }
+
+    $("tr td").click(function(){
+    	let color = document.getElementById('colorPicker').value;
+    	$(this).css("background-color", color);
+	});
 }
