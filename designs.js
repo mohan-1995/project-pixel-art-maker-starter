@@ -3,7 +3,7 @@
 
 // When size is submitted by the user, call makeGrid()
 $('#btn').click(function(){
-	//$('tr td').remove();
+
 	const h = document.getElementById('input_height').value;
 
 	const w = document.getElementById('input_width').value;
@@ -11,7 +11,7 @@ $('#btn').click(function(){
 	if (h==0 || w==0) {
 		alert("Please provide height and width greater than or equal to one");
 	}
-	
+
 	$(':input[type="submit"]').prop('disabled', true);
 
 	$('#input_height').click(function(){
@@ -25,9 +25,9 @@ $('#btn').click(function(){
 		$('td').remove();
 		$(':input[type="submit"]').prop('disabled', false);
 	});
-	
+
 	makeGrid(h, w);
-	alert('You have selected ' + h + " rows and " + w + " columns");	
+	alert('You have selected ' + h + " rows and " + w + " columns");
 });
 
 function makeGrid(m, n){
