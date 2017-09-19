@@ -26,4 +26,6 @@ $('#btn').click(function(){
 		$(':input[type="submit"]').prop('disabled', false);
 	});
 	
+	makeGrid(h, w);
+	alert('You have selected ' + h + " rows and " + w + " columns");	
 });
