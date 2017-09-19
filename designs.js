@@ -7,4 +7,9 @@ $('#btn').click(function(){
 	const h = document.getElementById('input_height').value;
 
 	const w = document.getElementById('input_width').value;
+
+	if (h==0 || w==0) {
+		alert("Please provide height and width greater than or equal to one");
+	}
+	
 });
