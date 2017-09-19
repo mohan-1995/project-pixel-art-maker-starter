@@ -12,4 +12,18 @@ $('#btn').click(function(){
 		alert("Please provide height and width greater than or equal to one");
 	}
 	
+	$(':input[type="submit"]').prop('disabled', true);
+
+	$('#input_height').click(function(){
+		$('tr').remove();
+		$('td').remove();
+		$(':input[type="submit"]').prop('disabled', false);
+	});
+
+	$('#input_width').click(function(){
+		$('tr').remove();
+		$('td').remove();
+		$(':input[type="submit"]').prop('disabled', false);
+	});
+	
 });
